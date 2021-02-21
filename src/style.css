@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.44);
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: 0.3s;
+  background-color: aquamarine;
+  background: #36d1dc;
+  background: -webkit-linear-gradient(to top, #5b86e5, #36d1dc);
+  background: linear-gradient(to top, #5b86e5, #36d1dc);
+}
+
+.card img {
+  width: inherit;
+  height: 150px;
+  display: relative;
+}
+
+.steps::-webkit-scrollbar {
+  display: none;
+}
+
+.card:hover .steps {
+  visibility: initial;
+  top: 0px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.steps {
+  overflow-y: hidden;
+  font-size: 12px;
+  position: relative;
+  top: 5%;
+  visibility: hidden;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.input-div {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.input-div > input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 350px;
+  margin-right: 10px;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.input-div > input::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: red;
+  top: 50%;
+}
+
+.input-div > input:focus {
+  outline: none !important;
+  border: 1px solid red;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.input-div > button:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.input-div > button {
+  width: 50px;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.input-div:hover > button {
+  background: #0b7dda;
+}
